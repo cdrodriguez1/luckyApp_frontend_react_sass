@@ -11,3 +11,7 @@ Currently, two official plugins are available:
 <!-- USUARIO DE PRUEBA:
 rescate@nimal.com
 Rescat@2024 -->
+
+<!-- PARA LA VISUALIZACIÓN:
+Descargar la extensión responsiva (simulador de móvil):
+https://chromewebstore.google.com/detail/simulador-m%C3%B3vil-herramien/ckejmhbmlajgoklhgbapkiccekfoccmk?hl=es&pli=1 -->
