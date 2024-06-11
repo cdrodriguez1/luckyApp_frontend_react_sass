@@ -1,0 +1,70 @@
+.carousel-container {
+  width: 60%;
+  height: 90vh;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+
+  .slick-slide {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+
+    img {
+      max-width: 105%;
+      height: auto;
+      object-fit: contain;
+      margin-top: 70%;
+
+      @media (max-width: 768px) {
+        width: 80%;
+      }
+
+      @media (max-width: 400px) {
+        width: 100%;
+        font-family: "animalhubSemiBold";
+      }
+    }
+  }
+
+  .carousel-text {
+    margin-top: 25px;
+    color: rgb(2, 147, 190);
+    text-align: center;
+    font-family: "animalhubSemiBold";
+    font-size: 1.9rem;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      font-size: 1.3rem;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 1rem;
+    }
+  }
+
+  .slick-dots {
+    bottom: -170px;
+
+    li button:before {
+      font-size: 25px;
+      color: salmon;
+    }
+  }
+
+  .icono {
+    position: absolute;
+    top: 45px;
+    right: -44px;
+    width: 34px;
+    height: 39px;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}

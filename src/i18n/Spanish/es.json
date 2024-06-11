@@ -1,0 +1,20 @@
+{
+     "MENS-SEDE": "SEDE",
+     "MENS-REGI": "REGION",
+     "MENS-ALIAN": "ALIANZAS",
+     "MENS-RELI": "RELIGIONES",
+     "MENS-FUND": "FUNDACION",
+     "MENS-CAS": "CASA",
+     "MENS-APA": "APARICIONES",
+     "MENS-PAD": "PADRE",
+     "COMMON": {
+          "SEARCH": "Buscar"
+     },
+     "HOME_PAGE": {
+          "GAMES_OF": "JUEGO DE",
+          "THRONES": "TRONOS",
+          "PERSONAJES": "PERSONAJES",
+          "CASAS": "CASAS",
+          "CRONOLOGIA": "CRONOLOGIA"
+     }
+}

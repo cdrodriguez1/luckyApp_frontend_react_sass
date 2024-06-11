@@ -1,0 +1,41 @@
+// SplashPage.scss
+
+.splash-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.img-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  // margin-bottom: 20px;
+}
+
+@media (max-width: 400px) {
+  .img-name img {
+    max-width: 600px;
+    object-fit: contain;
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .splash-page {
+    .img-name {
+      width: 60px;
+      object-fit: contain;
+    }
+  }
+  img-name img {
+    max-width: 150px;
+  }
+}

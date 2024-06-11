@@ -1,0 +1,16 @@
+{
+    "carouselGallery": [
+        {
+            "src": "src/assets/images/icon-apolo.png",
+            "alt": "icon-apolo"
+        },
+        {
+            "src": "src/assets/images/icon-kiko.png",
+            "alt": "icon-apolo"
+        },
+        {
+            "src": "src/assets/images/icon-dali.png",
+            "alt": "icon-apolo"
+        }
+    ]
+}

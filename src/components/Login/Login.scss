@@ -1,0 +1,161 @@
+.logUsuario {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 118%;
+    margin-bottom: 90%;
+  }
+
+  h2 {
+    font-weight: 700;
+    color: rgb(1, 116, 142);
+    margin-bottom: 20%;
+    animation: bounce 4s infinite alternate;
+  }
+
+  a {
+    position: absolute;
+    top: 110%;
+    left: 65%;
+    text-decoration: none;
+    color: rgb(14, 54, 61);
+  }
+
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    gap: 0rem;
+    background-color: white;
+
+    input {
+      width: 365px;
+      border: 1px solid rgb(189, 210, 214);
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      height: 25px; // Podríamos quitarlo
+      &:focus,
+      &:active {
+        border-bottom: 1px solid #97c4cd;
+        box-shadow: 0 0 10px rgba(189, 210, 214, 0.5);
+        outline: none;
+      }
+    }
+
+    .buttonLogin {
+      background-color: rgb(1, 116, 142);
+      color: white;
+      padding: 10px 100px;
+      border-radius: 5px;
+      border: 0px;
+      margin: 50px 0px -20px 0px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .buttonLogin:hover {
+      box-shadow: 0 4px 6px rgba(1, 116, 142, 0.2);
+    }
+
+    .buttonRegister {
+      border: solid 1px rgb(1, 116, 142);
+      color: rgb(1, 116, 142);
+      background-color: white;
+      padding: 10px 100px;
+      border-radius: 5px;
+      margin: 20px 0px -20px 0px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .buttonRegister:hover {
+      box-shadow: 0 4px 6px rgba(1, 116, 142, 0.2);
+    }
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+// Responsive
+
+@media (max-width: 500px) {
+  .logUsuario {
+    width: 80%;
+    padding: 5px;
+    top: 40%;
+    img {
+      width: 250px;
+      margin-bottom: 20%;
+      object-fit: contain;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 23px;
+      color: rgb(1, 116, 142);
+      margin-bottom: 20%;
+      animation: bounce 4s infinite alternate;
+      text-align: center;
+    }
+
+    a {
+      font-size: 10px;
+      position: absolute;
+      top: 130%;
+      left: 58%;
+    }
+
+    .loginForm {
+      .inputsForm {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      input {
+        margin-top: 15px;
+        width: 300px;
+        height: 20px;
+      }
+      .buttonLogin {
+        width: 60%;
+        padding: 10px 10px;
+        border-radius: 5px;
+        border: 0px;
+        margin: 10px 0px -15px 0px;
+
+        .buttonLogin:hover {
+          box-shadow: 0 4px 6px rgba(1, 116, 142, 0.2);
+        }
+      }
+
+      .buttonRegister {
+        border: solid 1px rgb(1, 116, 142);
+        color: rgb(1, 116, 142);
+        background-color: white;
+        width: 60%;
+        padding: 10px 10px;
+        border-radius: 5px;
+        border: 0px;
+        margin: 25px 0px -15px 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.b__home__articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 80px;
+
+  .line {
+    background-color: lightgrey;
+    width: 100%;
+    height: 1px;
+    margin: 35px 0;
+  }
+}
+
+.b__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+  img {
+    width: 400px;
+    height: 300px;
+    border: solid 2px lightsalmon;
+    border-radius: 10px;
+  }
+}
+
+.b__title {
+  position: relative;
+  background-color: lightsalmon;
+  width: 400px;
+  bottom: 10px;
+  color: white;
+  text-decoration: none;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+}
+
+.head__title {
+  color: rgb(2, 147, 190);
+  margin-right: 21%;
+  // margin-bottom: 25px;
+  // margin-bottom: 25px;
+}
+
+.hello__user {
+  color: rgb(2, 147, 190);
+  font-size: 20px;
+  margin-right: 25%;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.logo__header img {
+  width: 85%;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  border: none;
+}
+
+@media (max-width: 400px) {
+  .b__home__articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .line {
+      background-color: lightgrey;
+      width: 100%;
+      height: 1px;
+      margin: 25px 0;
+    }
+  }
+
+  .b__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: -10%;
+    margin-top: 15%;
+
+    img {
+      width: 90%;
+      border: solid 2px lightsalmon;
+      border-radius: 10px;
+    }
+  }
+
+  .b__title {
+    position: relative;
+    background-color: lightsalmon;
+    width: 90%;
+    // bottom: 10px;
+    color: white;
+    text-decoration: none;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+  }
+
+  .head__title {
+    color: rgb(2, 147, 190);
+    position: absolute;
+    left: 6%;
+    top: 23%;
+  }
+
+  .hello__user {
+    color: rgb(2, 147, 190);
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+  }
+
+  .logo__header img {
+    margin-top: 10%;
+    margin-bottom: 10px;
+    width: 50%;
+    height: 1%;
+    object-fit: contain;
+    border: none;
+  }
+}

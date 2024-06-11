@@ -1,0 +1,376 @@
+.status {
+  position: relative;
+  padding-left: 5px;
+  font-size: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 110px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+}
+
+.status-rejected::before {
+  background-color: red;
+}
+
+.status-in-process::before {
+  background-color: orange;
+}
+
+.status-completed::before {
+  background-color: green;
+}
+
+.status-rejected {
+  color: red;
+  font-weight: bold;
+}
+
+.status-in-process {
+  color: orange;
+  font-weight: bold;
+}
+
+.status-completed {
+  color: green;
+  font-weight: bold;
+}
+
+.backBtn {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.filter-dropdown {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  display: inline-block;
+
+  .filterBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 5px;
+    min-width: 160px;
+
+    button {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      border: none;
+      background: none;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+
+  &:hover .dropdown-content {
+    display: block;
+    width: 5px;
+  }
+}
+
+.adoption-gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 130px 50px;
+}
+
+.filter-input {
+  position: absolute;
+  width: 400px;
+  top: 5%;
+  border: 1px solid #bdd2d6;
+  border-radius: 50px;
+  padding: 10px 20px;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+
+  input {
+    outline: none;
+    border-style: none;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+.adoption-card {
+  background-color: #fff;
+  border: 3px solid #bdd2d6;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 500px;
+  margin: 30px 0px;
+  cursor: pointer;
+}
+
+.title-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.preview-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+h5 {
+  margin: 0;
+  padding: 15px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(1, 116, 142);
+}
+
+span {
+  display: block;
+  padding: 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+b {
+  display: block;
+  padding: 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+.preview-info span + span {
+  margin-top: -5px;
+}
+
+.preview-info b + b {
+  margin-top: -5px;
+}
+
+.animal-Img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #bdd2d6;
+}
+
+@media (max-width: 700px) {
+  .title-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .backBtn {
+    position: absolute;
+    top: 6%;
+    left: 8%;
+    width: 10px;
+    height: 20px;
+  }
+
+  .filter-dropdown {
+    top: 6%;
+    right: 5%;
+  }
+
+  .adoption-gallery {
+    margin: 130px 50px;
+  }
+
+  .filter-input {
+    top: 7.5%;
+    border: 1px solid #bdd2d6;
+    border-radius: 50px;
+    padding: 0px 10px;
+    font-size: 16px;
+    width: 200px;
+
+    input {
+      border-style: none;
+      width: 150px;
+    }
+  }
+
+  .adoption-card {
+    width: 350px;
+    margin: 30px 0px;
+    cursor: pointer;
+    transition: transform 0.3 ease, box-shadow 0.3s ease;
+  }
+
+  .adoption-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  @keyframes hoverEffect {
+    0% {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  h5 {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  span {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  b {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .animal-Img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .preview-info span + span {
+    margin-top: -5px;
+  }
+
+  .preview-info b + b {
+    margin-top: -5px;
+  }
+
+  .status {
+    position: relative;
+    padding-left: 1px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-right: 30px;
+    font-weight: 550;
+
+    &::before {
+      margin: 10px;
+      left: 25px;
+    }
+  }
+
+  .backBtn {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .filter-dropdown {
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    display: inline-block;
+
+    .filterBtn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      margin-top: 5px;
+      min-width: 160px;
+
+      button {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+
+        &:hover {
+          background-color: #ddd;
+        }
+      }
+    }
+
+    &:hover .dropdown-content {
+      display: block;
+      right: -75px;
+      width: 5px;
+      border-radius: 20px;
+    }
+  }
+}

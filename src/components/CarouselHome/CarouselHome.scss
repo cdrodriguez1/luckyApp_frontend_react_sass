@@ -1,0 +1,225 @@
+.b__carousel__home {
+  position: relative;
+  // width: 100%;
+  overflow: hidden;
+  
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel1__home {
+  flex: 0 0 auto;
+  min-width: 99.7%;
+  background-image: url("src/assets/images/carousel-home.svg");
+  // justify-content: center;
+  height: 200px;
+  // margin: 10px 10px;
+  border-radius: 30px;
+  // box-shadow: 0px 0px 10px  rgb(37, 121, 146);
+  box-shadow: 3px 7px 5px rgb(176, 204, 212);
+}
+
+.link_carousel {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  text-decoration: none;
+
+  // padding: 20px;
+}
+
+.img__dog__background {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 10px;
+  display: flex;
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 50px;
+  position: absolute;
+}
+
+.text__content {
+  margin: 45px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  h1 {
+    color: rgb(2, 147, 190);
+    font-size: 30px;
+  }
+  p {
+    color: rgb(71, 71, 71);
+    // font-size: 20px;
+  }
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.indicator {
+  background-color: white;
+  height: 10px;
+  width: 2px;
+  border-radius: 50%;
+  border: 1px solid lightsalmon;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: lightsalmon;
+}
+
+@media (max-width: 400px) {
+  .b__carousel__home {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel1__home {
+    flex: 0 0 auto;
+    min-width: 90%;
+    background-image: url("src/assets/images/carousel-home.svg");
+    height: 100px;
+    border-radius: 30px;
+    box-shadow: 3px 7px 5px rgb(176, 204, 212);
+  }
+
+  .link_carousel {
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .img__dog__background {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 10px;
+    display: flex;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+
+  .text__content {
+    margin: 45px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .text__content h1 {
+    color: rgb(2, 147, 190);
+    font-size: 20px;
+  }
+
+  .text__content p {
+    color: rgb(71, 71, 71);
+  }
+
+  .indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .indicator {
+    background-color: white;
+    height: 10px;
+    width: 2px;
+    border-radius: 50%;
+    border: 1px solid lightsalmon;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .indicator.active {
+    background-color: lightsalmon;
+  }
+}
+
+//--------------------------------
+
+// .b__carousel__home{
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 25px 0;
+// }
+
+// .carousel1__home{
+//     position: relative;
+//     width: 95%;
+//     background-image: url('src/assets/images/carousel-home.svg');
+//     background-position: center;
+//     display: flex;
+//     align-items: center;
+//     border-radius: 25px;
+//     text-align: left;
+//     box-shadow: 0px 0px 10px  rgb(37, 121, 146);
+// }
+
+// .link_carousel{
+//     display: flex;
+//     align-items: center;
+//     text-decoration: none;
+// }
+
+// .img__dog__background{
+//     width: 110px;
+//     height: 110px;
+//     margin: 0 50px
+// }
+
+// .text__content{
+//       margin-right: 40px;
+// h1{
+//     color: rgb(2, 147, 190);
+//     font-size: 35px;
+// }
+// p{
+//     color: rgb(71, 71, 71);
+//     font-size: 20px;
+// }
+// }
+
+// //--------------------
+
+// .indicators{
+//     display: flex;
+//     position: absolute;
+//     bottom: -30px;
+// }
+// .indicator{
+//     background-color: white;
+//     height: 12px;
+//     width: 12px;
+//     border-radius: 100%;
+//     border: none;
+//     outline:auto lightsalmon;
+//     box-shadow: 0px 0px 3px #555;
+//     margin:  0 4px;
+//     cursor: pointer;
+// }

@@ -1,0 +1,24 @@
+{
+    "MENS-SEDE": "SETTLEMENT",
+    "MENS-REGI": "REGION",
+    "MENS-ALIAN": "ALLIANCES",
+    "MENS-RELI": "RELIGIONS",
+    "MENS-FUND": "FOUNDATION",
+    "MENS-CAS": "HOUSE",
+    "MENS-APA": "EPISODES",
+    "MENS-PAD": "PARENTS",
+    "MENS-DESC": "SIBLINGS",
+    "MENS-TIT": "TITLES",
+    "MENS-VOLVER": "Back",
+    "MENS-BUSCAR": "Search",
+    "COMMON": {
+        "SEARCH": "Search"
+    },
+    "HOME_PAGE": {
+        "GAMES_OF": "GAMES OF ",
+        "THRONES": "THRONES",
+        "PERSONAJES": "CHARACTERS",
+        "CASAS": "HOUSES",
+        "CRONOLOGIA": "CHRONOLOGY"
+    }
+}

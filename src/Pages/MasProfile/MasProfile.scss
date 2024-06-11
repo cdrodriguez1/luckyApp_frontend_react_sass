@@ -1,0 +1,111 @@
+.masprof-page {
+  // Estilos para el contenedor principal de la página
+  background-color: #f2f2f2;
+  min-height: 100vh; 
+  padding: 20px; 
+  max-width: 400px; 
+
+  .button{
+    display: flex;
+    
+  }
+
+  .masprof-header {
+    // Estilos para el encabezado
+    background-color: #ffffff;
+    padding: 20px; 
+  }
+
+  .menu-options {
+    // Estilos para las opciones del menú
+    margin-top: 20px;
+
+    ul {
+      list-style-type: none; // Quita los estilos de la lista
+      padding: 0;
+      margin: 0;
+
+      li {
+        // Estilos para cada elemento de la lista
+        padding: 10px 0;
+
+        .material-icons {
+          // Estilos para los iconos
+          margin-right: 10px; 
+          font-size: 20px; 
+          
+        }
+
+        .text {
+          // Estilos para el texto
+          font-size: 18px; 
+          color: #333333; 
+        }
+
+        .arrow {
+          // Estilos para la flecha
+          margin-left: auto; 
+          color: orange;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:400px ) {
+.masprof-page {
+  // Estilos para el contenedor principal de la página
+  background-color: #f2f2f2;
+  min-height: 100vh; 
+  padding: 20px; 
+  max-width: 400px; 
+
+  .button{
+    display: flex;
+    
+  }
+
+  .masprof-header {
+    // Estilos para el encabezado
+    background-color: #ffffff;
+    padding: 20px; 
+  }
+
+  .menu-options {
+    // Estilos para las opciones del menú
+    margin-top: 20px;
+
+    ul {
+      list-style-type: none; // Quita los estilos de la lista
+      padding: 0;
+      margin: 0;
+
+      li {
+        // Estilos para cada elemento de la lista
+        padding: 10px 0;
+
+        .material-icons {
+          // Estilos para los iconos
+          margin-right: 10px; 
+          font-size: 20px; 
+          
+        }
+
+        .text {
+          // Estilos para el texto
+          font-size: 18px; 
+          color: #333333; 
+        }
+
+        .arrow {
+          // Estilos para la flecha
+          margin-left: auto; 
+          color: orange;
+        }
+      }
+    }
+  }
+}
+    
+  
+}
